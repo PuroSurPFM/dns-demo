@@ -1,0 +1,23 @@
+$TTL 2d
+
+$ORIGIN demo.purosurboxeo.com.
+
+@               IN      SOA     ns.demo.purosurboxeo.com. purosur.purosurboxeo.com (
+                                2024020400     ; serial
+                                12h            ; refresh
+                                15m            ; retry
+                                3w             ; expire
+                                2h             ; minimum TTL
+                                )
+
+                IN      NS      ns.demo.purosurboxeo.com
+
+ns              IN      A       192.168.0.7
+
+; -- add dns records below
+
+; -- demo servers
+
+srv-bind-01     IN      A       192.168.0.7
+*.srv-bind-01   IN      A       192.168.0.7
+
